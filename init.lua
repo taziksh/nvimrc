@@ -1,3 +1,7 @@
+--- Options
+vim.opt.number = true
+vim.opt.relativenumber = true
+
 --- Package manager
 require("config.lazy")
 --- Language server configs
