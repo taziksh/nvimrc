@@ -29,7 +29,9 @@ require("lazy").setup({
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "onedark" } },
-  -- automatically check for plugin updates
-  checker = { enabled = true },
+  install = { colorscheme = { "alabaster" } },
+  -- check for plugin updates in the background, but don't notify on startup
+  checker = { enabled = true, notify = false },
+  -- don't auto-check for config file changes on startup
+  change_detection = { enabled = false },
 })
