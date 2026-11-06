@@ -87,7 +87,7 @@ return {
     lazy = false,
     build = ":UpdateRemotePlugins",
     init = function()
-      vim.g.python3_host_prog = "/Users/tazik/miniconda3/bin/python"
+      vim.g.python3_host_prog = vim.fn.expand("~/miniconda3/bin/python")
       vim.g.molten_auto_init_behavior = "init"
       vim.g.molten_auto_open_output = true
       vim.g.molten_output_win_max_height = 18
