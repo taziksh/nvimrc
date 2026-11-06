@@ -8,8 +8,9 @@ return {
       "lua", "vim", "vimdoc", "query",
       "python", "typescript", "tsx", "javascript",
       "swift", "json", "markdown", "markdown_inline",
-      "bash", "html", "css",
+      "bash", "html", "css", "groovy",
     })
+    vim.treesitter.language.register("groovy", "nextflow")
 
     vim.api.nvim_create_autocmd("FileType", {
       callback = function(args)

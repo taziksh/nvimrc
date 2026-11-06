@@ -22,6 +22,12 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+--- Filetypes
+vim.filetype.add({
+  extension = { nf = "nextflow" },
+  filename = { ["nextflow.config"] = "nextflow" },
+})
+
 --- Package manager
 require("config.lazy")
 --- Language server configs
@@ -30,3 +36,4 @@ vim.lsp.enable("vtsls")
 vim.lsp.enable("basedpyright")
 vim.lsp.enable("sourcekit")
 vim.lsp.enable("copilot")
+vim.lsp.enable("nextflow_ls")
